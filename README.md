@@ -10,6 +10,10 @@ Find all letters of the alphabet that are not used in a given string of English 
 ### Problem 2: Particle Chamber
 Simulate particles moving through a chamber at constant speed until they all exit.
 
+Built and deployed project site can be found at: http://danielk-realwork-interview-webst-webbucket1cccc993-wdxodfcm180g.s3-website.us-east-1.amazonaws.com/
+
+**NOTE:** My personal AWS account is currently under verification review so I cannot use CloudFront for the time being. The static S3 site is not under HTTPS and SSL, so please bypass this for the time being in your browser.
+
 ## Architecture
 
 - **Frontend**: React 18 + TypeScript + Vite
