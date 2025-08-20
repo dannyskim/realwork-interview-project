@@ -1,0 +1,26 @@
+{
+  "name": "@realwork/infrastructure",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "sst dev",
+    "build": "sst build",
+    "deploy": "sst deploy",
+    "deploy-web": "node scripts/deploy-auto.js",
+    "deploy-all": "pnpm run deploy && pnpm run deploy-web",
+    "remove": "sst remove",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "sst": "^2.41.4",
+    "aws-cdk-lib": "2.108.1",
+    "constructs": "^10.3.0",
+    "@aws-sdk/client-s3": "^3.450.0",
+    "@aws-sdk/s3-request-presigner": "^3.450.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "typescript": "^5.2.2"
+  }
+}

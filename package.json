@@ -1,0 +1,23 @@
+{
+  "name": "realwork-interview",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RealWork Interview Assignment - Unused Letters and Particle Chamber",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "build": "pnpm -r build",
+    "deploy": "pnpm build && pnpm -F @realwork/infrastructure deploy-all",
+    "type-check": "pnpm -r type-check"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "packageManager": "pnpm@8.15.0",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
